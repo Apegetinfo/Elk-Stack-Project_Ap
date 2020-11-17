@@ -1,0 +1,262 @@
+    1  cd /etc/ansible/
+    2  ls
+    3  nano ansible.cfg 
+    4  nano hosts 
+    5  ls
+    6  nano hosts 
+    7  cat hosts 
+    8  clear
+    9  nano My_first_playbook.yml
+   10  ssh-keygen
+   11  cat /root/.ssh/id_rsa.pub
+   12  ssh ansible@10.0.0.5
+   13  ssh ansible@10.0.0.4
+   14  ssh ansible@10.0.0.6
+   15  ansible all -m ping 
+   16  ls
+   17  docker
+   18  docker-playbook /etc/ansible/My_first_playbook.yml 
+   19  ansible-playbook /etc/ansible/My_first_playbook.yml 
+   20  ssh ansible@10.0.0.5
+   21  ls
+   22  ssh ap@10.1.0.4
+   23  cat /root/.ssh/id_rsa.pub
+   24  ssh ap@10.1.0.4
+   25  ssh ansible@10.1.0.4
+   26  nano /etc/ansible/hosts 
+   27  ansible elk -m ping 
+   28  nano elk-palybook.yml
+   29  sudo apt install ansible-lint
+   30  apt install ansible-lint
+   31  pip2 instal ansible-lint
+   32  ansible-lint
+   33  ansible-lint test_deploy.yml -v
+   34  ls
+   35  ansible-playbook /etc/ansible/elk-palybook.yml 
+   36  ansible-playbook /etc/ansible/elk-palybook.yml  -vvv
+   37  ssh ansible@10.1.0.4
+   38  ansible-playbook /etc/ansible/elk-palybook.yml  -vvv
+   39  nano elk-palybook.yml 
+   40  ansible-playbook /etc/ansible/elk-palybook.yml  -vvv
+   41  history 
+   42  ssh ansible@10.1.0.4
+   43  pwd
+   44  ls
+   45  cat /root/.ssh/id_rsa.pub
+   46  ssh ansible@10.1.0.5
+   47  nano elk-palybook.yml 
+   48  ls
+   49  nano hosts
+   50  ansible-playbook /etc/ansible/elk-palybook.yml
+   51  ls
+   52  ssh ansible@10.1.0.5
+   53  ssh ansible@10.0.0.4
+   54  clear
+   55  mkdir files
+   56  ls
+   57  cd files/
+   58  cd ..
+   59  cd roles/
+   60  ls
+   61  nano -l filebeat-instal.yml
+   62  cd ..
+   63  cd files/
+   64  nano -l filebeat-config.yml
+   65  ls
+   66  cd ..
+   67  ls
+   68  cd roles/
+   69  ls
+   70  cat filebeat-instal.yml 
+   71  history 
+   72  ls
+   73  ansible-playbook filebeat-instal.yml
+   74  cd ..
+   75  ls
+   76  cd roles/
+   77  ls
+   78  cd ..
+   79  ls
+   80  cd files/
+   81  ls
+   82  nano -l filebeat-config.yml 
+   83  rm filebeat-config.yml 
+   84  nano filebeat-config.yml
+   85  cd ..
+   86  cd roles/
+   87  ansible-playbook filebeat-instal.yml
+   88  nano filebeat-instal.yml
+   89  ssh ap@10.1.0.5
+   90  ssh ansible@10.1.0.5
+   91  nano filebeat-instal.yml
+   92  ansible-playbook filebeat-instal.yml
+   93  ls
+   94  cd ..
+   95  ls
+   96  cd files/
+   97  ls
+   98  pwd
+   99  nano filebeat-config.yml
+  100  ls
+  101  pwd
+  102  ls
+  103  cd ..
+  104  ls
+  105  cd roles/
+  106  ls
+  107  cat filebeat-instal.yml 
+  108  ls
+  109  cd ..
+  110  ls
+  111  cd files/
+  112  ls
+  113  nano -l filebeat-config.yml 
+  114  ls
+  115  cd ..
+  116  ls
+  117  cd roles/
+  118  ls
+  119  nano filebeat-instal.yml 
+  120  ansible-playbook filebeat-instal.yml 
+  121  nano filebeat-instal.yml 
+  122  ssh ansible@10.1.0.5
+  123  ssh ansible@10.0.0.5
+  124  ssh ansible@10.0.0.4
+  125  ls
+  126  cd ..
+  127  ls
+  128  cat ansible.cfg
+  129  clear
+  130  cd files/
+  131  ls
+  132  cd ..
+  133  cd roles/
+  134  vi filebeat-instal.yml 
+  135  ansible-playbook filebeat-instal.yml 
+  136  curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/files/filebeat-config.yml
+  137  ls
+  138  cd ..
+  139  ls
+  140  cd files/
+  141  ls
+  142  nano filebeat-config.yml 
+  143  cd ..
+  144  ls
+  145  cd roles/
+  146  ls
+  147  ansible-playbook filebeat-instal.yml
+  148  ls
+  149  pwd
+  150  cd ..
+  151  pwd
+  152  ls
+  153  ssh 52.188.8.175
+  154  cd ..
+  155  ls
+  156  cd ansible/
+  157  cd files/
+  158  mkdir filebeat
+  159  cd filebeat
+  160  nano filebeat.yml
+  161  ls
+  162  nano filebeat.yml
+  163  ls
+  164  cat filebeat.yml 
+  165  cd ..
+  166  ls
+  167  cd ..
+  168  ls
+  169  cd files/
+  170  ls
+  171  rm filebeat
+  172  rm -r filebeat
+  173  ls
+  174  cd /etc
+  175  mkdir metricbeat
+  176  cd metricbeat/
+  177  nano metricbeat.yml
+  178  pwd
+  179  mkdir modules.d
+  180  cd modules.d/
+  181  cd ..
+  182  ls
+  183  nano metricbeat.yml 
+  184  curl -L -O https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat
+  185  ls
+  186  cat metricbeat
+  187  nano -l  metricbeat
+  188  ls
+  189  cat metricbeat.yml 
+  190  rm metricbeat.yml 
+  191  ls
+  192  cp metricbeat metricbeat.yml
+  193  ls
+  194  cd ..
+  195  cd ansible/
+  196  ls
+  197  cd files/
+  198  ls
+  199  cat filebeat-config.yml 
+  200  cd ..
+  201  ls
+  202  vm -r metricbeat/ /etc/ansible/files/
+  203  mv -r metricbeat/ /etc/ansible/files/
+  204  mv -r metricbeat /etc/ansible/files/
+  205  mv  metricbeat /etc/ansible/files/
+  206  cd ansible/files/
+  207  ls
+  208  cd metricbeat/
+  209  pwd
+  210  ls
+  211  cd ..
+  212  ls
+  213  cd ..
+  214  ls
+  215  cat elk-palybook.yml 
+  216  cd files/
+  217  ls
+  218  cd metricbeat/
+  219  ld
+  220  ls
+  221  nano metricbeat.yml 
+  222  cd ..
+  223  nano metricbeat.yml
+  224  nano metricbeat.yml -l
+  225  nano elk-palybook.yml 
+  226  ls
+  227  cat My_first_playbook.yml
+  228  ls
+  229  cd files/
+  230  ls
+  231  cd ..
+  232  ls
+  233  cd roles/
+  234  cd ..
+  235  cp metricbeat.yml /etc/ansible/roles/
+  236  cd roles/
+  237  ls
+  238  nano filebeat-instal.yml 
+  239  nano metricbeat.yml 
+  240  history  | grep vi
+  241  vi metricbeat.yml 
+  242  ansible-playbook metricbeat.yml 
+  243  ls
+  244  nano metricbeat.yml 
+  245  nano metricbeat.yml  -l
+  246  nano /etc/ansible/roles/metricbeat.yml
+  247  nano /etc/ansible/roles/metricbeat.yml -l
+  248  ansible-playbook metricbeat.yml 
+  249  nano /etc/ansible/roles/metricbeat.yml -l
+  250  ansible-playbook metricbeat.yml 
+  251  ls
+  252  ls -l
+  253  ls -laiths
+  254  cd ..
+  255  ls
+  256  pwd
+  257  ls -lait
+  258  ls -laith
+  259  scp -r /etc/ansible/ ap@10.0.0.6:/home/ap
+  260  scp -r /etc/ansible/ ansible@10.0.0.6:/home/ap
+  261  ssh ap@10.0.0.6
+  262  history >/etc/ansible/cmd_list.txt
